@@ -4,35 +4,45 @@
 	<title>BaranToppare</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="Generator" content="CV Maker - https://cvmkr.com/" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,latin-ext" rel="stylesheet" type="text/css" />
 	<style type="text/css">
 		body {
 			background: #f0f0f0;
 			margin: 0;
 			padding: 0;
 			
-			font-family: 'Helvetica Neue', Helvetica, Arial;
-			line-height: 18px;
-			font-size: 12px;
-			
-			color: #222;
+			font-family: 'Open Sans', 'Helvetica Light', 'Helvetica Neue', 'Arial Narrow', Helvetica, Arial, serif;
+			font-weight: 300;
+			line-height: 22px;
+			font-size: 14px;
+
+			color: #000;
 		}
+
 		h1, h2, h3, h4 {
+			font-family: 'Open Sans', 'Helvetica Light', 'Helvetica Neue', 'Arial Narrow', Helvetica, Arial, serif;
+			font-weight: 300;
+			font-weight: normal;
 			margin: 0 0 15px 0;
 			padding: 0;
-			font-weight: normal;
 		}
 		h1 {
-			font-size: 500%;
+			font-size: 350%;
 		}
 		h2 {
 			font-size: 210%;
 		}
 		h3 {
-			font-size: 150%;
+			font-size: 130%;
 		}
 		
 		p {
 			margin: 0 0 10px 0;
+		}
+		
+		ul {
+			margin: 0;
+			list-style-type: square;
 		}
 		a {
 			color: #222;
@@ -56,10 +66,10 @@
 		}
 		
 		#title {
-			margin: 0px 0 30px 0;
-			line-height: 70px;
-			text-align: center;
-			color: #111;
+			line-height: 42px;
+			border-bottom: 1px solid #000;
+			padding-bottom: 20px;
+			margin: 0px 0 20px 0;
 		}
 		
 		#credit {
@@ -73,52 +83,72 @@
 			}
 		
 		p label {
-			float: left;
+			font-size: 110%;
 			margin-right: 10px;
-			min-width: 50px;
 		}
 			p label span.colon {
-				float: right;
+				display: inline;
 			}
-		p span.value {
-			float: left;
-			width: 70%;
-			display: block;
-		}
+
 		
 		.section {
-			margin-bottom: 40px;
-			padding-bttom: 20px;
+			margin-bottom: 25px;
 		}
-		
+		.section .set {
+		}
 		.item {
 			margin: 0 0 20px 0;
 		}
 
-		.basic-info {
-			padding: 0px 0 0px 140px;
-			
+		/*  _____________________________ */
+		.section .title {
+			text-transform: uppercase;
+			font-size: 160%;
+
+			margin: 0 auto 15px auto;
+			display: block;
 		}
-		.basic-info p {
-			float: left;
-			width: 48%;
-			margin: 0 0 0px 0;
-		}
-		.basic-info p.full {
-			width: 100%;
-			float: none;
-		}
-			.basic-info .r {
-				float: right;
+			.section .set {
+				margin-left: 25px;
+			}
+			.section .set h3 {
+				margin: 0;
 			}
 
-		/* education _____________________________ */
-		
-		.section .title {
-			border-bottom: 1px solid #ddd;
-			padding-bottom: 5px;
+
+
+		.basic-info {
+			border-top: 0;
 		}
-		.section span {
+		.section.basic-info .title {
+			float: left;
+			border: 0;
+		}
+		.basic-info .set {
+			float: right;
+			width: 70%;
+		}
+		.basic-info .address {
+			width: 40%;
+			float: left;
+		}
+		.basic-info .r {
+			float: right;
+			width: 60%;
+			text-align: right;
+		}
+			.basic-info label {
+				font-family: 'Open Sans', 'Helvetica Light', 'Helvetica Neue', 'Arial Narrow', Helvetica, Arial, serif;
+				font-weight: 300;
+			}
+			.basic-info label, .basic-info span  {
+				display: inline !important;
+			}
+		.basic-info p {
+			margin: 0;
+		}
+		
+		.section span.value {
 			display: block;
 		}
 		.section h3 span.l, .section span.r {
@@ -131,25 +161,23 @@
 			}
 			.section-education .school,
 			.section-work .job_title {
-				font-size: 120%;
+				font-size: 100%;
 				display: block;
 				margin: 5px 0 5px 0;
 			}
 
-		/* ___ photo ___ */
 		#photo {
 			width: 160px;
 			height: 200px;
 			overflow: hidden;
 			float: left;
-			margin-top: 12px;
+			margin-top: 4px;
 			border-radius: 4px;
 		}
 		#photo img {
 			width: 100%;
 			height: auto;
 		}
-
 		.header.photo {
 			margin-left: 190px;
 		}
@@ -160,6 +188,7 @@
 			float: none;
 			padding: 0;
 		}
+
 
 		@media screen and (max-width: 950px) {
 			body {
@@ -177,109 +206,168 @@
 
 <div id="main">
 			<div id="photo">
-			<img src="https://cvmkr.com/photos/89b6ec_731788_1685927.jpg" alt="" />
+			<img src="http://files1.cvmkr.com/89b6ec_731788_1685927.jpg" alt="" />
 		</div>
 		<div class="header photo">
 	
 	<h1 id="title">Baran Toppare</h1>
 	<div class="basic-info section">
-					<p class="email"><label>E-mail<span class="colon">:</span></label> <span class="value">barantoppare@gmail.com</span></p>
+		<h2 class="title">Contact</h2>
+		<div class="set">
 		
-					<p class="website"><label>Website<span class="colon">:</span></label> <span class="value"><a href="http://datajuggling.net/" rel="nofollow">http://datajuggling.net/</a></span></p>
-		
-					<p class="phone"><label>Phone<span class="colon">:</span></label> <span class="value">+905320636126</span></p>
-		
-					<p class="address "><label>Address<span class="colon">:</span></label>
-				<span class="value">
-					Kadıköy Feneryolu Mah. Hüseyin Paşa Çıkmazı Sokak no:29/6, İstanbul				</span>
-			</p>
-				<div class="clear"> </div>
+							<p class="address">
+					<span class="value">
+						Feneryolu Mah. Hüseyin Paşa Çıkmazı Sk. no:29/6 Kadıköy İstanbul					</span>
+				</p>
+						<div class="r">
+									<p class="email"><span class="value">barantoppare@gmail.com</span></p>
+				
+				
+									<p class="phone"><span class="value">+905320636126</span></p>
+							</div>
+			<div class="clear"> </div>
+		</div><!-- set //-->
+		<div class="clear"> </div>
 	</div><!-- basic-info //-->
 
 			</div><div class="clear"> </div>
 	
 		
+			<div class="section section-1287593158087">
+			<h2 class="title">Objective</h2>
+			<div class="set">
+							<div class="item">
+								<span class="info">- Make things better using data<div>- Help people make things better using data</div></span>
+							</div>
+						</div>
+			<div class="clear"> </div>
+		</div>
 			<div class="section section-work">
 			<h2 class="title">Work experience</h2>
 			<div class="set">
-							<div class="item">
-								<h3><span class="company l">Yandex</span>
-						<span class="date r">January 2014 &mdash; Present</span>
-							</h3>
-							<span class="clear"> </span>
-							<span class="job_title">Data Analyst</span><span class="info">Crawler and content system analytics. Creating quality measurement metrics.</span><span class="clear"> </span>
-							</div>
-						
-							<div class="item">
-								<h3><span class="company l">Udacity</span>
-						<span class="date r">January 2015 &mdash; May 2015</span>
-							</h3>
-							<span class="clear"> </span>
-							<span class="job_title">Code Reviewer</span><span class="info">I am one of the very first Udacity Code Reviewers, where I review 
+								<div class="item">
+									<h3><span class="company l">Springboard</span>
+							<span class="date r">July 2017 &mdash; Present</span>
+								</h3>
+								<div class="clear"> </div>
+								<span class="job_title">Data Science Mentor</span><div class="info"><span>- Mentor for "Data Science Career Track" course. Currently mentoring 3 students.</span><div><span>- Supporting students during completion of all assignments, projects, and capstone projects, as well as assessing them</span></div></div><div class="clear"> </div>
+								</div>
+							
+								<div class="item">
+									<h3><span class="company l">Tanı</span>
+							<span class="date r">August 2017 &mdash; Present</span>
+								</h3>
+								<div class="clear"> </div>
+								<span class="job_title">Data Scientist</span><div class="info">- developing machine learning algorithms to improve routine CRM activities such as segmentation, churn prediction, association, recommendation, campaign target group etc.<div>- research with different deep learning networks to measure their applicability to regular machine learning algorithms</div></div><div class="clear"> </div>
+								</div>
+							
+								<div class="item">
+									<h3><span class="company l">Getir</span>
+							<span class="date r">August 2015 &mdash; August 2017</span>
+								</h3>
+								<div class="clear"> </div>
+								<span class="job_title">Lead Data Scientist</span><div class="info">- Leading other data scientists<div>- Define and monitor business KPIs</div><div><div>- Building machine learning models for predictive analytics</div></div><div>- Hypothesis testing (A/B tests)</div><div><div>- Customer segmentation and user behaviour analysis such as acquisition, engagement and retention</div><div>- Performing ad-hoc analysis regarding the product , operations and marketing</div><div><div>- Discrete event simulation optimization</div><div>- Creating automated jobs to democratize data by making them available in dashboards and email reports etc.</div><div><div>- Hiring new talents</div></div></div></div></div><div class="clear"> </div>
+								</div>
+							
+								<div class="item">
+									<h3><span class="company l">Yandex</span>
+							<span class="date r">January 2014 &mdash; August 2015</span>
+								</h3>
+								<div class="clear"> </div>
+								<span class="job_title">Data Analyst</span><div class="info"><div><div>- Performed analysis using big data and developed metrics on Turkish search crawler. </div><div>- Performed digital marketing data analysis (merging data from Facebook, Adwords with internal data)</div></div><div>- Created internal dashboards and web based viewers</div></div><div class="clear"> </div>
+								</div>
+							
+								<div class="item">
+									<h3><span class="company l">Udacity</span>
+							<span class="date r">January 2015 &mdash; May 2015</span>
+								</h3>
+								<div class="clear"> </div>
+								<span class="job_title">Code Reviewer</span><div class="info">One of the very first Udacity Code Reviewers, where I review 
 student project submissions. For each submission, I do both a thorough 
 code review and project evaluation. I strive to give actionable and 
 helpful feedback to students while also improving my code reviewing 
-skills at the same time.</span><span class="clear"> </span>
+skills at the same time.</div><div class="clear"> </div>
+								</div>
+							
+								<div class="item">
+									<h3><span class="company l">Yapı Kredi Bank</span>
+							<span class="date r">August 2011 &mdash; January 2014</span>
+								</h3>
+								<div class="clear"> </div>
+								<span class="job_title">Strategic Planning Specialist</span><div class="info"><div><span>Planning the optimum workforce capacity of the bank aligned with the vision and strategies of bank, service levels and targets.</span></div></div><div class="clear"> </div>
+								</div>
 							</div>
-						
-							<div class="item">
-								<h3><span class="company l">Yapı ve Kredi Bankası</span>
-						<span class="date r">August 2011 &mdash; January 2014</span>
-							</h3>
-							<span class="clear"> </span>
-							<span class="job_title">Strategic Planning Specialist</span><span class="info">Planning the optimum workforce capacity of the bank aligned with the vision and strategies of bank, service levels and targets.</span><span class="clear"> </span>
-							</div>
-						</div>
+			<div class="clear"> </div>
 		</div>
 			<div class="section section-qualifications">
 			<h2 class="title">Qualifications</h2>
 			<div class="set">
-						<div class="item">
-							<span class="info"><ul><li>Python</li><li>R</li><li>Linux</li><li>Analysis</li><li>Metric Development</li><li>Excel, Access</li><li>Web Development (Python + Django + Javascript)</li><li>Version Control (git + svn)</li><li>RDBMS</li><li>SQL</li><li>MapReduce</li><li>Hive<br /></li><li>Object Oriented Modelling</li><li>Finance, Investment, Stock Market</li></ul></span>
+							<div class="item">
+								<span class="info"><ul><li>Python (including pandas, scipy, numpy, simpy)</li><li>Machine Learning (mostly used scikit-learn)</li><li>Deep Learning (Keras)</li><li>SQL &amp; NoSQL (mongoDB)</li><li>Defining and monitoring KPIs</li><li>Dashboard building for monitoring metrics &amp; KPIs</li><li>Hypothesis testing and inferential statistics (A/B tests)</li><li>Ms Office Applications (expert in Excel &amp; Powerpoint)</li><li>Version Control - Git</li><li>Discrete Event Simulation (SimPy)</li><li>Web Development (Django)</li><li>MapReduce</li></ul></span>
+							</div>
 						</div>
-					</div>
+			<div class="clear"> </div>
+		</div>
+			<div class="section section-1478431372114">
+			<h2 class="title">Certifications</h2>
+			<div class="set">
+							<div class="item">
+								<span class="info"><span><span><a>Google Analytics Qualification</a> (valid until 2018-05-06)</span></span></span>
+							</div>
+						</div>
+			<div class="clear"> </div>
 		</div>
 			<div class="section section-education">
 			<h2 class="title">Education</h2>
 			<div class="set">
 						<div class="item">
-							<h3><span class="course l">B.Sc in Chemical Engineering</span>
-						<span class="date r">September 2004 &mdash; June 2008</span>
-							</h3>
-							<span class="clear"> </span>
-							<span class="school">Middle East Technical University</span><span class="info">Graduated as Honour Student</span><span class="clear"> </span>
-						</div>
-						
-						<div class="item">
 							<h3><span class="course l">MBA</span>
 						<span class="date r">September 2008 &mdash; June 2011</span>
 							</h3>
-							<span class="clear"> </span>
-							<span class="school">Middle East Technical University</span><span class="clear"> </span>
+							<div class="clear"> </div>
+							<span class="school">Middle East Technical University</span><div class="info">Focus on finance</div><span class="clear"> </span>
+						</div>
+						
+						<div class="item">
+							<h3><span class="course l">B.Sc in Chemical Engineering</span>
+						<span class="date r">September 2004 &mdash; June 2008</span>
+							</h3>
+							<div class="clear"> </div>
+							<span class="school">Middle East Technical University</span><div class="info">Graduated as Honour Student</div><span class="clear"> </span>
 						</div>
 						</div>
+			<div class="clear"> </div>
 		</div>
 			<div class="section section-1423607504265">
 			<h2 class="title">MOOC</h2>
 			<div class="set">
-						<div class="item">
-							<span class="info">Course: Udacity - How to Use Git and GitHub<br />Date: December 2014<br /><br />
-Course: Udacity - Web Development<br />Date: November 2014<br /><br />
-Course: Udacity - Intro to Computer Science<br />Date: January 2014<br /><br />
-<blockquote></blockquote>Course: Coursera - An Introduction to Interactive Programming in Python<br />Date: December 2013</span>
+							<div class="item">
+								<span class="info"><div><span>Udacity - How to Use Git and GitHub</span></div><span>Udacity - Web Development<br /></span><span>Udacity - Intro to Computer Science</span><br /><div><div><div>Coursera - An Introduction to Interactive Programming in Python</div></div></div><div>Coursera - R Programming</div><div><div>Coursera - Machine Learning Foundations: A Case Study Approach</div></div><div>Coursera - Regression Modeling in Practice</div><div>Coursera - Marketing Analytics<br /><div>Udemy - Learning Python for Data Analysis and Visualization</div></div><div>Udacity - A/B Testing</div><div>Coursera - Applied Machine Learning in Python</div><div>Datacamp - Deep Learning Python</div></span>
+							</div>
 						</div>
-					</div>
+			<div class="clear"> </div>
+		</div>
+			<div class="section section-1473606908839">
+			<h2 class="title">Accounts</h2>
+			<div class="set">
+							<div class="item">
+								<span class="info"><span><span>Twitter - https://twitter.com/toppare</span></span><div>Linkedin - https://www.linkedin.com/in/barantoppare</div><div>Github - https://github.com/toppare</div></span>
+							</div>
+						</div>
+			<div class="clear"> </div>
 		</div>
 			<div class="section section-interests">
 			<h2 class="title">Interests</h2>
 			<div class="set">
-						<div class="item">
-							<span class="info">Gaming, Travel</span>
+							<div class="item">
+								<span class="info">Online Gaming, Data Science, Travel</span>
+							</div>
 						</div>
-					</div>
+			<div class="clear"> </div>
 		</div>
 		
 </div>
-
+	<div id="credit">Made with <a href="https://cvmkr.com/">CV Maker</a></div>
+	
 </body>
 </html>
