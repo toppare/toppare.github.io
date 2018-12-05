@@ -4,30 +4,25 @@
 	<title>BaranToppare</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="Generator" content="CV Maker - https://cvmkr.com/" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,latin-ext" rel="stylesheet" type="text/css" />
 	<style type="text/css">
 		body {
 			background: #f0f0f0;
 			margin: 0;
 			padding: 0;
 			
-			font-family: 'Open Sans', 'Helvetica Light', 'Helvetica Neue', 'Arial Narrow', Helvetica, Arial, serif;
-			font-weight: 300;
-			line-height: 22px;
-			font-size: 14px;
+			font-family: Georgia, serif, 'Trebuchet MS';
+			line-height: 20px;
+			font-size: 12px;
 
-			color: #000;
+			color: #222;
 		}
 
 		h1, h2, h3, h4 {
-			font-family: 'Open Sans', 'Helvetica Light', 'Helvetica Neue', 'Arial Narrow', Helvetica, Arial, serif;
-			font-weight: 300;
-			font-weight: normal;
 			margin: 0 0 15px 0;
 			padding: 0;
 		}
 		h1 {
-			font-size: 350%;
+			font-size: 400%;
 		}
 		h2 {
 			font-size: 210%;
@@ -41,8 +36,10 @@
 		}
 		
 		ul {
-			margin: 0;
-			list-style-type: square;
+			list-style-type: circle;
+		}
+		li {
+			margin-bottom: 5px;
 		}
 		a {
 			color: #222;
@@ -67,9 +64,9 @@
 		
 		#title {
 			line-height: 42px;
-			border-bottom: 1px solid #000;
-			padding-bottom: 20px;
-			margin: 0px 0 20px 0;
+			margin: 0px 0 15px 0;
+			font-weight: normal;
+			text-align: center;
 		}
 		
 		#credit {
@@ -83,6 +80,8 @@
 			}
 		
 		p label {
+			font-weight: bold;
+			
 			font-size: 110%;
 			margin-right: 10px;
 		}
@@ -92,62 +91,39 @@
 
 		
 		.section {
-			margin-bottom: 25px;
+			margin-bottom: 30px;
 		}
-		.section .set {
-		}
+		
 		.item {
 			margin: 0 0 20px 0;
 		}
 
 		/*  _____________________________ */
-		.section .title {
-			text-transform: uppercase;
-			font-size: 160%;
-
-			margin: 0 auto 15px auto;
-			display: block;
-		}
-			.section .set {
-				margin-left: 25px;
-			}
-			.section .set h3 {
-				margin: 0;
-			}
-
-
-
 		.basic-info {
-			border-top: 0;
+			margin: 0 auto 30px auto;
+			width: 80%;
+			overflow: hidden;
+			text-align: center;
 		}
-		.section.basic-info .title {
-			float: left;
-			border: 0;
-		}
-		.basic-info .set {
-			float: right;
-			width: 70%;
-		}
-		.basic-info .address {
-			width: 40%;
-			float: left;
-		}
-		.basic-info .r {
-			float: right;
-			width: 60%;
-			text-align: right;
-		}
-			.basic-info label {
-				font-family: 'Open Sans', 'Helvetica Light', 'Helvetica Neue', 'Arial Narrow', Helvetica, Arial, serif;
-				font-weight: 300;
-			}
-			.basic-info label, .basic-info span  {
-				display: inline !important;
-			}
 		.basic-info p {
 			margin: 0;
 		}
+		.basic-info .dot {
+			display: inline;
+			font-size: 14px;
+			margin: 0 10px;
+		}
 		
+		.section .title {
+			text-transform: uppercase;
+			font-size: 150%;
+			text-align: center;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 10px;
+		}
+			.section .set h3 {
+				margin: 0;
+			}
 		.section span.value {
 			display: block;
 		}
@@ -164,14 +140,16 @@
 				font-size: 100%;
 				display: block;
 				margin: 5px 0 5px 0;
+				font-style: italic;
 			}
 
+		/* ___ photo ___ */
 		#photo {
 			width: 160px;
 			height: 200px;
 			overflow: hidden;
 			float: left;
-			margin-top: 4px;
+			margin-top: 8px;
 			border-radius: 4px;
 		}
 		#photo img {
@@ -187,8 +165,9 @@
 		.header.photo .basic-info {
 			float: none;
 			padding: 0;
+			width: auto;
+			text-align: left;
 		}
-
 
 		@media screen and (max-width: 950px) {
 			body {
@@ -212,19 +191,18 @@
 	
 	<h1 id="title">Baran Toppare</h1>
 	<div class="basic-info section">
-		<h2 class="title">Contact</h2>
 		<div class="set">
-		
+						<p class="email">
+											E-mail <span class="dot">&sect;</span> barantoppare@gmail.com<br />
+					
+					
+											Phone <span class="dot">&sect;</span> +4917685614798<br />
+									</p>
+			
 							<p class="address">
-					<span class="value">
-						Feneryolu Mah. Hüseyin Paşa Çıkmazı Sk. no:29/6 Kadıköy İstanbul					</span>
-				</p>
-						<div class="r">
-									<p class="email"><span class="value">barantoppare@gmail.com</span></p>
-				
-				
-									<p class="phone"><span class="value">+905320636126</span></p>
-							</div>
+											Address <span class="dot">&sect;</span>
+										10557, Berlin				</p>
+			
 			<div class="clear"> </div>
 		</div><!-- set //-->
 		<div class="clear"> </div>
@@ -246,19 +224,19 @@
 			<h2 class="title">Work experience</h2>
 			<div class="set">
 								<div class="item">
+									<h3><span class="company l">8fit</span>
+							<span class="date r">Jan 2018 &mdash; Present</span>
+								</h3>
+								<div class="clear"> </div>
+								<span class="job_title">Senior Data Scientist</span><div class="info"><div>- design, define and analyse A/B tests </div><div>- build and deploy machine learning models</div><div>- implement ETL jobs for feeding BI tools and machine learning models</div><div>- supporting cross-functional teams with in-depth analysis <br /><div><br /></div></div></div><div class="clear"> </div>
+								</div>
+							
+								<div class="item">
 									<h3><span class="company l">Springboard</span>
 							<span class="date r">July 2017 &mdash; Present</span>
 								</h3>
 								<div class="clear"> </div>
-								<span class="job_title">Data Science Mentor</span><div class="info"><span>- Mentor for "Data Science Career Track" course. Currently mentoring 3 students.</span><div><span>- Supporting students during completion of all assignments, projects, and capstone projects, as well as assessing them</span></div></div><div class="clear"> </div>
-								</div>
-							
-								<div class="item">
-									<h3><span class="company l">Tanı</span>
-							<span class="date r">August 2017 &mdash; Present</span>
-								</h3>
-								<div class="clear"> </div>
-								<span class="job_title">Data Scientist</span><div class="info">- developing machine learning algorithms to improve routine CRM activities such as segmentation, churn prediction, association, recommendation, campaign target group etc.<div>- research with different deep learning networks to measure their applicability to regular machine learning algorithms</div></div><div class="clear"> </div>
+								<span class="job_title">Data Science Mentor - Part Time</span><div class="info"><span>Mentor for "Data Science Career Track" program. Guiding and supporting students while they </span><span>are gaining necessary skills around Data Science and Machine Learning</span></div><div class="clear"> </div>
 								</div>
 							
 								<div class="item">
@@ -278,18 +256,6 @@
 								</div>
 							
 								<div class="item">
-									<h3><span class="company l">Udacity</span>
-							<span class="date r">January 2015 &mdash; May 2015</span>
-								</h3>
-								<div class="clear"> </div>
-								<span class="job_title">Code Reviewer</span><div class="info">One of the very first Udacity Code Reviewers, where I review 
-student project submissions. For each submission, I do both a thorough 
-code review and project evaluation. I strive to give actionable and 
-helpful feedback to students while also improving my code reviewing 
-skills at the same time.</div><div class="clear"> </div>
-								</div>
-							
-								<div class="item">
 									<h3><span class="company l">Yapı Kredi Bank</span>
 							<span class="date r">August 2011 &mdash; January 2014</span>
 								</h3>
@@ -303,16 +269,7 @@ skills at the same time.</div><div class="clear"> </div>
 			<h2 class="title">Qualifications</h2>
 			<div class="set">
 							<div class="item">
-								<span class="info"><ul><li>Python (including pandas, scipy, numpy, simpy)</li><li>Machine Learning (mostly used scikit-learn)</li><li>Deep Learning (Keras)</li><li>SQL &amp; NoSQL (mongoDB)</li><li>Defining and monitoring KPIs</li><li>Dashboard building for monitoring metrics &amp; KPIs</li><li>Hypothesis testing and inferential statistics (A/B tests)</li><li>Ms Office Applications (expert in Excel &amp; Powerpoint)</li><li>Version Control - Git</li><li>Discrete Event Simulation (SimPy)</li><li>Web Development (Django)</li><li>MapReduce</li></ul></span>
-							</div>
-						</div>
-			<div class="clear"> </div>
-		</div>
-			<div class="section section-1478431372114">
-			<h2 class="title">Certifications</h2>
-			<div class="set">
-							<div class="item">
-								<span class="info"><span><span><a>Google Analytics Qualification</a> (valid until 2018-05-06)</span></span></span>
+								<span class="info"><ul><li>Python (PyData stack)</li><li>Machine Learning (mostly scikit-learn, PyTorch for deep neural networks)</li><li>Version Control - Git</li><li>SQL (Redshift) &amp; NoSQL (mongoDB)</li><li>Defining and monitoring KPIs</li><li>Dashboard building for monitoring metrics &amp; KPIs</li><li>Hypothesis testing and inferential statistics (A/B tests)</li><li>Common office tools (spreadsheets, presentations etc.)</li><li>Discrete Event Simulation (SimPy)</li><li>Web Development (Django)</li></ul></span>
 							</div>
 						</div>
 			<div class="clear"> </div>
@@ -342,7 +299,7 @@ skills at the same time.</div><div class="clear"> </div>
 			<h2 class="title">MOOC</h2>
 			<div class="set">
 							<div class="item">
-								<span class="info"><div><span>Udacity - How to Use Git and GitHub</span></div><span>Udacity - Web Development<br /></span><span>Udacity - Intro to Computer Science</span><br /><div><div><div>Coursera - An Introduction to Interactive Programming in Python</div></div></div><div>Coursera - R Programming</div><div><div>Coursera - Machine Learning Foundations: A Case Study Approach</div></div><div>Coursera - Regression Modeling in Practice</div><div>Coursera - Marketing Analytics<br /><div>Udemy - Learning Python for Data Analysis and Visualization</div></div><div>Udacity - A/B Testing</div><div>Coursera - Applied Machine Learning in Python</div><div>Datacamp - Deep Learning Python</div></span>
+								<span class="info"><div><span>Udacity - </span><span>Intro to Deep Learning with PyTorch</span></div><div><span>Udacity - How to Use Git and GitHub</span></div><span>Udacity - Web Development<br /></span><span>Udacity - Intro to Computer Science</span><br /><div><div><div>Coursera - An Introduction to Interactive Programming in Python</div></div></div><div>Coursera - R Programming</div><div><div>Coursera - Machine Learning Foundations: A Case Study Approach</div></div><div>Coursera - Regression Modeling in Practice</div><div>Coursera - Marketing Analytics<br /><div>Udemy - Learning Python for Data Analysis and Visualization</div></div><div>Udacity - A/B Testing</div><div>Coursera - Applied Machine Learning in Python</div><div>Datacamp - Deep Learning Python</div></span>
 							</div>
 						</div>
 			<div class="clear"> </div>
@@ -367,7 +324,6 @@ skills at the same time.</div><div class="clear"> </div>
 		</div>
 		
 </div>
-	<div id="credit">Made with <a href="https://cvmkr.com/">CV Maker</a></div>
-	
+<div id="credit">Made with <a href="https://cvmkr.com/">CV Maker</a></div>
 </body>
 </html>
